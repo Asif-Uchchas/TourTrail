@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Container from '../Container';
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
@@ -63,16 +63,25 @@ const Categories = () => {
         return null
     }
 
+
+    const [showCategories, setShowCategories] = useState(false);
+
+    const toggleCategories = () => {
+        setShowCategories(!showCategories);
+    };
+  
   return (
       <Container >
 
           <Image 
         alt="Logo" 
         className=" hidden md:block cursor-pointer" 
-        height="70" width="70" 
-        src="/images/logo1.jpg" />
+        height="100" width="100" 
+        src="/images/catcat.jpg"
+        onClick={toggleCategories} />
 
-          <div className=' pt-4 flex flex-row items-center justify-between overflow-x-auto'>
+        <div
+        className={`pt-4 flex flex-row items-center justify-between overflow-x-auto ${showCategories ? '' : 'hidden'}`}>
               {categories.map((item) => (
                   <CategoryBox
                       key={item.label}

@@ -21,6 +21,7 @@ npm i zustand
 npm i axios
 npm i react-hook-form
 npm i react-hot-toast
+npm install query-string
 will try- npm i react-toastify
 ```
 

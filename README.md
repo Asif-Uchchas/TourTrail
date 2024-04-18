@@ -23,6 +23,8 @@ npm i react-hook-form
 npm i react-hot-toast
 npm install query-string
 will try- npm i react-toastify
+npm install -D prisma
+npx prisma init
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

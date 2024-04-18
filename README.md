@@ -18,7 +18,10 @@ Npm installation commands:
 
 ```bash
 npm i zustand
-
+npm i axios
+npm i react-hook-form
+npm i react-hot-toast
+will try- npm i react-toastify
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

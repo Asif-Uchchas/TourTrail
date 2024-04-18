@@ -5,7 +5,7 @@ import React from 'react'
 const Avatar = () => {
   return (
       <Image
-          src='/placeholder.jpg'
+          src='/images/avatar.png'
           alt="Avatar"
           width={30}
           height={30}

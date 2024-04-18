@@ -17,7 +17,7 @@ const UserMenu = () => {
           onClick={() => {}}
           className="hidden md:block text-sm font-semibold py-3 px-3 rounded-full hover:bg-neutral-100 transition cursor-pointer"
         >
-          Airbnb your home
+          Tour Trail your home
         </div>
         <div
           onClick={toggleOpen}

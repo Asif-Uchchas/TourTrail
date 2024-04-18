@@ -6,6 +6,8 @@ import ClientOnly from "./components/ClientOnly";
 import Modal from "./components/modals/Modal";
 import RegisterModal from "./components/modals/RegisterModal";
 import ToastProvider from "./providers/ToasterProvider";
+import LoginModal from "./components/modals/LoginModal";
+import getCurrentUser from "./actions/getCurrentUser";
 
 
 const font = Nunito({ subsets: ["latin"] });
@@ -16,18 +18,20 @@ export const metadata: Metadata = {
     "A travelling website where users can rent out their place or book a place to stay in",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const currentUser = await getCurrentUser();
   return (
     <html>
       <body className={font.className}>
         <ClientOnly>
           <ToastProvider/>
+          <LoginModal />
           <RegisterModal/>
-          <Navbar />
+          <Navbar currentUser={currentUser} />
         </ClientOnly>
         {children}
       </body>

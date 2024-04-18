@@ -25,6 +25,12 @@ npm install query-string
 will try- npm i react-toastify
 npm install -D prisma
 npx prisma init
+npx prisma db push
+npm install next-auth@beta
+npm install @prisma/client @auth/prisma-adapter
+npm install prisma --save-dev
+npm i bcryptjs
+npm i -D @types/bcryptjs
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

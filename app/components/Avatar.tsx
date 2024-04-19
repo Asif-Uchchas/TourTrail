@@ -2,13 +2,18 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Avatar = () => {
+interface AvatarProps{
+  src?:string | null | undefined;
+};
+
+
+const Avatar = ({src}:AvatarProps) => {
   return (
       <Image
-          src='/images/avatar.png'
+          src={src || '/images/avatar.png'}
           alt="Avatar"
-          width={30}
-          height={30}
+          width={40}
+          height={40}
           className='rounded-full'
       />
   )

@@ -99,11 +99,21 @@ const RentModal = () => {
       </div>
     )
 
+  if (step == STEPS.LOCATION) {
+    bodyContent = (
+      <div>
+        Location Step!
+      </div>
+    )
+  }
+    
+  
+
   return (
       <Modal
       isOpen={rentModal.isOpen}
       onClose={rentModal.onClose}
-      onSubmit={rentModal.onClose}
+      onSubmit={onNext}
       actionLabel= {actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       secondaryAction={step=== STEPS.CATEGORY ? undefined : onBack}

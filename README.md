@@ -31,6 +31,11 @@ npm install @prisma/client @auth/prisma-adapter
 npm install prisma --save-dev
 npm i bcryptjs
 npm i -D @types/bcryptjs
+npm install world-countries
+npm install react-select
+npm install leaflet
+npm install -D @types/leaflet 
+npm install react-leaflet
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

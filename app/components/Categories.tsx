@@ -1,13 +1,14 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Container from '../Container';
+import Container from './Container';
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
 import { GiCastle, GiForest, GiForestCamp} from 'react-icons/gi';
 import { MdOutlineVilla } from 'react-icons/md';
-import CategoryBox from '../CategoryBox';
+import CategoryBox from './CategoryBox';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { IoDiamond } from 'react-icons/io5';
+import Main from "./Main"
 
 export const categories = [
     {
@@ -56,6 +57,8 @@ const Categories = () => {
     const params = useSearchParams()
     const category = params?.get('category');
     const pathname = usePathname()
+    
+    const [showCategories, setShowCategories] = useState(false);
 
     const isMainPage = pathname === '/'
 
@@ -64,7 +67,6 @@ const Categories = () => {
     }
 
 
-    const [showCategories, setShowCategories] = useState(false);
 
     const toggleCategories = () => {
         setShowCategories(!showCategories);
@@ -91,6 +93,7 @@ const Categories = () => {
                   />
                 ))}
           </div>
+          
     </Container>
   );
 }

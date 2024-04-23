@@ -8,6 +8,7 @@ import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from '../CategoryBox';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { IoDiamond } from 'react-icons/io5';
+import Main from "../Main"
 
 export const categories = [
     {
@@ -73,6 +74,10 @@ const Categories = () => {
   return (
       <Container >
 
+        <div className="my-[50px]">
+          <Main />
+        </div>
+
           <Image 
         alt="Logo" 
         className=" hidden md:block cursor-pointer" 
@@ -91,6 +96,9 @@ const Categories = () => {
                   />
                 ))}
           </div>
+          <div className="my-[50px]">
+          <Main />
+        </div>
     </Container>
   );
 }

@@ -4,7 +4,7 @@ import Container from '../Container'
 import Logo from './Logo'
 import Search from './Search'
 import UserMenu from './UserMenu'
-import Categories from './Categories'
+import Categories from '../Categories'
 import { SafeUser } from '@/app/types'
 
 
@@ -15,7 +15,7 @@ interface NavbarProps{
 
 const Navbar = ({currentUser}:NavbarProps) => {
   return (
-    <div className='fixed w-full bg-white z-10 shadow-sm h-[200px]'>
+    <div className='fixed w-full bg-white z-10 shadow-sm'>
       <div className='py-1 border-b-[1px]'>
         <Container>
             <div className='flex flex-row items-center justify-between gap-3 md:gap-0'>
@@ -25,7 +25,7 @@ const Navbar = ({currentUser}:NavbarProps) => {
             </div>
         </Container>
       </div>
-      <Categories />
+      
     </div>
   )
 }

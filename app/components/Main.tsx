@@ -1,5 +1,6 @@
-
+'use client'
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
 
@@ -24,19 +25,23 @@ const Main = () => {
               Transform your short-term rental business with our customizable Airbnb clone app. Featuring guest and host apps, web panel, and admin panel, it streamlines operations and enhances guest experiences. Stand out with captivating descriptions, tailored to your target audience, and boost your online visibility with SEO-optimized keywords. Utilize Hostaway's Airbnb management software for an enticing and successful listing.
               </p> */}
               <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-                <button className="bg-white text-[#2E6A47] hover:bg-[#A6D71C] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
+              <Link href="/#categories">
+                <button className="bg-white text-blue-500 hover:bg-[#60A5FA] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
                   Browse Categories
                 </button>
-                <button className="bg-white text-[#2E6A47] hover:bg-[#A6D71C] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
+                </Link>
+                <Link href="/#listings">
+                <button className="bg-white text-blue-500 hover:bg-[#60A5FA] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
                   Show Hotels
                 </button>
+                </Link>
               </div>
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0">
               <div className="relative">
 
                 <Image
-                  src="/tour.gif"
+                  src="/roadtrip.gif"
                   alt="Medicine Hero Image"
                   width={500}
                   height={500}

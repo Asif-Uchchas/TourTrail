@@ -36,6 +36,8 @@ npm install react-select
 npm install leaflet
 npm install -D @types/leaflet 
 npm install react-leaflet
+npm install react-icons --save
+npm i react-awesome-reveal
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

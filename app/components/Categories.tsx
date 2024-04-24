@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Container from './Container';
-import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
+import { TbBeach, TbCategoryPlus, TbMountain, TbPool } from 'react-icons/tb';
 import { GiCastle, GiForest, GiForestCamp} from 'react-icons/gi';
 import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from './CategoryBox';
@@ -47,7 +47,7 @@ export const categories = [
         description: 'This property is near caves!'
     },
     {
-        label: 'Lux',
+        label: 'Luxury',
         icon: IoDiamond,
         description: 'This property is luxurious!'
     },
@@ -73,31 +73,26 @@ const Categories = () => {
     };
   
   return (
-      <Container>
+    <Container>
+    <div id="categories" className="flex items-center">
+      <TbCategoryPlus onClick={toggleCategories} size={70} />
 
-        <div id='categories'>
-          <Image 
-        alt="Logo" 
-        className=" hidden md:block cursor-pointer" 
-        height="100" width="100" 
-        src="/images/catcat.jpg"
-        onClick={toggleCategories} />
-
-        <div
-        className={`pt-4 flex flex-row items-center justify-between overflow-x-auto ${showCategories ? '' : 'hidden'}`}>
-              {categories.map((item) => (
-                  <CategoryBox
-                      key={item.label}
-                      label={item.label}
-                      selected={category === item.label}
-                      icon={item.icon}
-                  />
-                ))}
-          </div>
-                      
-        </div>
-          
-    </Container>
+      <div
+        className={`flex flex-row items-center justify-start overflow-x-auto gap-9 ml-4 ${
+          showCategories ? 'flex' : 'hidden'
+        }`}
+      >
+        {categories.map((item) => (
+          <CategoryBox
+            key={item.label}
+            label={item.label}
+            selected={category === item.label}
+            icon={item.icon}
+          />
+        ))}
+      </div>
+    </div>
+  </Container>
   );
 }
 

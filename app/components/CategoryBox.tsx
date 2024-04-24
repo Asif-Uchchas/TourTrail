@@ -50,7 +50,7 @@ const CategoryBox = ({ icon: Icon, label, selected }: CategoryBoxProps) => {
                 : 'border-transparent text-neutral-500'}
     `}>
 
-          <Icon size={26} />
+          <Icon size={30} />
           <div className='font-medium text-sm'>
               {label}
           </div>

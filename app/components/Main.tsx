@@ -43,8 +43,8 @@ const Main = () => {
                 <Image
                   src="/roadtrip.gif"
                   alt="Roadtrip Image"
-                  width={500}
-                  height={500}
+                  width={800}
+                  height={600}
             className="rounded-lg shadow-xl"
             unoptimized
                 />

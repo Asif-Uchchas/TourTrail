@@ -42,7 +42,7 @@ const Main = () => {
 
                 <Image
                   src="/roadtrip.gif"
-                  alt="Medicine Hero Image"
+                  alt="Roadtrip Image"
                   width={500}
                   height={500}
             className="rounded-lg shadow-xl"

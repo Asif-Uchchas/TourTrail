@@ -21,7 +21,7 @@ export default async function Home() {
   return (
     <ClientOnly>
       <Container>
-      <div className="my-[100px]">
+      <div className="mt-[80px] mb-[130px]">
           <Main />
         </div>
         <Categories />

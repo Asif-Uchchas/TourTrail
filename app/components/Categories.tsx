@@ -73,8 +73,9 @@ const Categories = () => {
     };
   
   return (
-      <Container >
+      <Container>
 
+        <div id='categories'>
           <Image 
         alt="Logo" 
         className=" hidden md:block cursor-pointer" 
@@ -93,6 +94,8 @@ const Categories = () => {
                   />
                 ))}
           </div>
+                      
+        </div>
           
     </Container>
   );

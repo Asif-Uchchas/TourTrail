@@ -18,7 +18,7 @@ interface ListingCardProps {
   actionId?: string;
   currentUser?: SafeUser | null;
 }
-const ListingCard = ({
+const  ListingCard = ({
   data,
   reservation,
   onAction,

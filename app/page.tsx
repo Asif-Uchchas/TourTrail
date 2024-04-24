@@ -3,7 +3,7 @@ import ClientOnly from "./components/ClientOnly";
 import Container from "./components/Container";
 import EmptyState from "./components/EmptyState";
 import getListngs from "./actions/getListings";
-import ListingCard from "./components/listings/ListingCard";
+import  ListingCard from "./components/listings/ListingCard";
 import getCurrentUser from "./actions/getCurrentUser";
 import Main from "./components/Main";
 import Categories from "./components/Categories";

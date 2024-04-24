@@ -13,7 +13,7 @@ const Map = dynamic(() => import("../components/Map"), {
 
 interface ListingInfoProps {
   user: SafeUser;
-  description: string;
+  description: string | null;
   guestCount: number;
   roomCount: number;
   bathroomCount: number;

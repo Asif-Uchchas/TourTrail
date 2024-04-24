@@ -2,7 +2,7 @@
 import { Reservation } from '@prisma/client';
 import React, { useMemo } from 'react';
 import { SafeListing, SafeUser } from '@/app/types';
-import { categories } from '@/app/components/navbar/Categories';
+import { categories } from '@/app/components/Categories';
 import Container from '@/app/components/Container';
 import ListingHead from '../ListingHead';
 import ListingInfo from '../ListingInfo';

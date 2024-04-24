@@ -26,12 +26,12 @@ const Main = () => {
               </p> */}
               <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
               <Link href="/#categories">
-                <button className="bg-white text-blue-500 hover:bg-[#60A5FA] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
+                <button className="bg-blue-100 text-blue-600 hover:bg-[#60A5FA] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
                   Browse Categories
                 </button>
                 </Link>
                 <Link href="/#listings">
-                <button className="bg-white text-blue-500 hover:bg-[#60A5FA] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
+                <button className="bg-blue-100 text-blue-600 hover:bg-[#60A5FA] hover:text-black py-2 px-6 rounded-full shadow-md transition duration-300">
                   Show Hotels
                 </button>
                 </Link>

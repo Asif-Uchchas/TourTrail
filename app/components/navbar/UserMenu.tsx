@@ -8,6 +8,7 @@ import useLoginModal from "@/app/hooks/useLoginModal";
 import { signOut } from "next-auth/react";
 import { SafeUser } from "@/app/types";
 import useRentModal from "@/app/hooks/useRentModal";
+import { FaPlusCircle } from "react-icons/fa";
 
 
 export interface UserMenuProps{
@@ -36,9 +37,9 @@ const UserMenu = ({currentUser}: UserMenuProps) => {
       <div className=" flex flex-row items-center gap-3">
         <div
           onClick={onRent}
-          className="hidden md:block text-sm font-semibold py-3 px-3 rounded-full hover:bg-neutral-100 transition cursor-pointer"
+          className="hidden md:block text-sm font-semibold py-3 px-3 rounded-full hover:bg-neutral-100 transition cursor-pointer border-2"
         >
-          Add Your Own to Tour-Trail
+          <span className="mr-10"><FaPlusCircle size={20} /></span>Add Hotels
         </div>
         <div
           onClick={toggleOpen}

@@ -9,12 +9,14 @@ import { signOut } from "next-auth/react";
 import { SafeUser } from "@/app/types";
 import useRentModal from "@/app/hooks/useRentModal";
 import { FaPlusCircle } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export interface UserMenuProps {
   currentUser?: SafeUser | null;
 }
 
 const UserMenu = ({ currentUser }: UserMenuProps) => {
+  const router = useRouter();
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
   const rentModal = useRentModal();
@@ -58,9 +60,9 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
           <div className=" flex flex-col cursor-pointer">
             {currentUser ? (
               <>
-                <MenuItem onClick={() => {}} label="My trips" />
+                <MenuItem onClick={() => router.push("/trips")} label="My trips" />
                 <MenuItem onClick={() => {}} label="My favourites" />
-                <MenuItem onClick={() => {}} label="My reservatons" />
+                <MenuItem onClick={() => router.push("/reservations")} label="My reservatons" />
                 <MenuItem onClick={() => {}} label="My properties" />
                 <MenuItem onClick={rentModal.onOpen} label="TourTrail home" />
                 <hr />

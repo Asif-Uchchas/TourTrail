@@ -10,7 +10,7 @@ interface AvatarProps{
 const Avatar = ({src}:AvatarProps) => {
   return (
       <Image
-          src={src || '/images/avatar.png'}
+          src={src || '/avatar.png'}
           alt="Avatar"
           width={40}
           height={40}

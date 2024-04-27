@@ -74,7 +74,7 @@ const Categories = () => {
   
   return (
     <Container>
-    <div id="categories" className="flex items-center">
+    <div id="categories" className="flex items-center cursor-pointer">
       <TbCategoryPlus onClick={toggleCategories} size={70} />
 
       <div

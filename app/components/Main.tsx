@@ -41,7 +41,7 @@ const Main = () => {
               <div className="relative">
 
                 <Image
-                  src="/roadtrip.gif"
+                  src="roadtrip.gif"
                   alt="Roadtrip Image"
                   width={800}
                   height={600}

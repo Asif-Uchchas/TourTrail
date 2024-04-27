@@ -41,8 +41,8 @@ const Main = () => {
               <div className="relative">
 
                 <Image
-                  src="/roadtrip.gif"
-                  alt="Roadtrip Image"
+                  src={"/roadtrip.gif"}
+                  alt="roadtrip image"
                   width={800}
                   height={600}
             className="rounded-lg shadow-xl"

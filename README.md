@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Find our project at [TourTrail](https://tour-trail.vercel.app/).
+
 ## Getting Started
 
 First, run the development server:
@@ -38,6 +40,7 @@ npm install -D @types/leaflet
 npm install react-leaflet
 npm install react-icons --save
 npm i react-awesome-reveal
+npm i sharp
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

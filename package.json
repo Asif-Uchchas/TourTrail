@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.0.0",
@@ -29,6 +30,7 @@
     "react-leaflet": "^4.2.1",
     "react-select": "^5.8.0",
     "react-spinners": "^0.13.8",
+    "sharp": "^0.33.3",
     "world-countries": "^5.0.0",
     "zustand": "^4.5.2"
   },

@@ -10,6 +10,7 @@ import { SafeUser } from "@/app/types";
 import useRentModal from "@/app/hooks/useRentModal";
 import { FaPlusCircle } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import usePaymentModal from "@/app/hooks/usePaymentModal";
 
 export interface UserMenuProps {
   currentUser?: SafeUser | null;
@@ -18,6 +19,7 @@ export interface UserMenuProps {
 const UserMenu = ({ currentUser }: UserMenuProps) => {
   const router = useRouter();
   const registerModal = useRegisterModal();
+  const paymentModal = usePaymentModal();
   const loginModal = useLoginModal();
   const rentModal = useRentModal();
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +74,7 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
               <>
                 <MenuItem onClick={loginModal.onOpen} label="Log In" />
                 <MenuItem onClick={registerModal.onOpen} label="Sign Up" />
+                <MenuItem onClick={paymentModal.onOpen} label="Payment" />
               </>
             )}
           </div>

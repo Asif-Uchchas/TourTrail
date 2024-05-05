@@ -73,7 +73,7 @@ const Categories = () => {
     };
   
   return (
-    <Container>
+    <div>
     <div id="categories" className="flex items-center cursor-pointer">
       <TbCategoryPlus onClick={toggleCategories} size={70} />
 
@@ -92,7 +92,7 @@ const Categories = () => {
         ))}
       </div>
     </div>
-  </Container>
+  </div>
   );
 }
 

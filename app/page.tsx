@@ -32,7 +32,7 @@ const Home = async (
           <Main/>
         </div>
         <Categories />
-        <div className="my-2"></div>
+        <div className="my-8"></div>
         <Search/>
         <div className="pt-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8" id='listings'>
           {listings.map((listing) =>{

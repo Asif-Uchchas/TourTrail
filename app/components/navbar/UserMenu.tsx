@@ -11,6 +11,7 @@ import useRentModal from "@/app/hooks/useRentModal";
 import { FaPlusCircle } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import SearchButton from "./SearchButton";
+import NavButton from "./NavButton";
 
 
 export interface UserMenuProps {
@@ -37,6 +38,7 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
   }, [currentUser, loginModal, rentModal]);
   return (
     <div className=" relative">
+      
       <div className=" flex flex-row items-center sm:justify-items-end gap-3">
         <div
           onClick={onRent}
@@ -67,7 +69,7 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
                 <MenuItem onClick={() => router.push("/favourites")} label="My favourites" />
                 <MenuItem onClick={() => router.push("/reservations")} label="My reservatons" />
                 <MenuItem onClick={() => router.push("/properties")} label="My properties" />
-                <MenuItem onClick={rentModal.onOpen} label="TourTrail home" />
+                <MenuItem onClick={rentModal.onOpen} label="Add Hotel" />
                 <hr />
                 <MenuItem onClick={() => signOut()} label="Logout" />
               </>

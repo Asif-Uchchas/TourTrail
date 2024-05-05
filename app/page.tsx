@@ -7,6 +7,7 @@ import  ListingCard from "./components/listings/ListingCard";
 import getCurrentUser from "./actions/getCurrentUser";
 import Main from "./components/Main";
 import Categories from "./components/Categories";
+import Search from "./components/navbar/Search";
 
 interface HomeProps{
   searchParams:IListingsParams
@@ -31,6 +32,7 @@ const Home = async (
           <Main/>
         </div>
         <Categories />
+        <Search/>
         <div className="pt-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8" id='listings'>
           {listings.map((listing) =>{
             return(
